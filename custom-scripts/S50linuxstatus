@@ -1,0 +1,14 @@
+#!/bin/sh
+case "$1" in
+    start)
+        python /usr/bin/linux_status.py &
+        ;;
+    stop)
+        exit 1
+        ;;
+    *)
+        exit 1
+        ;;
+esac
+
+exit 0
